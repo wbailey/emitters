@@ -1,9 +1,9 @@
-package emitters
+package sensors
 
 import "time"
 
-// Emitter
-type Emitter interface {
-	Emit() float64
-	UseFreq() time.Duration
+// Sensor
+type Sensor interface {
+	Measure() float64
+	Frequency() time.Duration
 }
